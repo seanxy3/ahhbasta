@@ -1,0 +1,153 @@
+@media screen and (max-width:700px) {
+    *{
+        overflow-x: hidden;
+    }
+
+    section{
+        min-height: calc(100% - 60px);
+        padding: 60px 50px;
+    }
+
+    body{
+        background-image: url("../images/dental.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+
+    nav{
+        padding: 30px 30px;
+    }
+
+    nav img{
+        height: 65px;
+    }
+
+    .nav-container{
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #329f94;
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav .nav-container .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+    #hero{
+        margin-top: 0;
+    }
+
+    #hero h1{
+        align-self: center;
+        margin: 0;
+        font-size: calc(1.875rem + 1.4vw);
+    }
+
+    .button-container{
+        width: 65vw;
+    }
+
+    .button{
+        width: 60vw;
+    }
+
+    .popup-container iframe{
+        width: 85vw;
+    }
+
+    .popup-container>img{
+        left: 5px;
+    }
+
+    .title>p{
+        display: flex;
+        font-size: 2.5px;
+        color: #164742;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -3px;
+    }
+
+    .service-container{
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .service-container>div:nth-child(10){
+        grid-column: 1;
+    }
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-container {
+        width: auto;
+    }
+
+    .about-container p{
+        font-size: 1.25rem;
+        align-self: center;
+    }
+
+    .divider{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-container{
+        width: auto;
+    }
+
+    .info-container{
+        gap: 5px;
+    }
+
+    .info-loc iframe{
+        width: auto; 
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1150px){
+    .service-container{
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+
+    .service-container>div:nth-child(10){
+        grid-column: 2;
+    }
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-container {
+        width: auto;
+    }
+
+    .divider{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

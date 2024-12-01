@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #f4f4f4;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+}
+
+/* Add Patient*/
+
+.form_container{
+    position: relative;
+    width: calc(100% - 100px);
+}
+
+.form-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #38a095;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 70px;
+    margin-left: 80px;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: #38a095;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input, select{
+    height: 55px;
+    width: 95%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.form-submit-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+
+.form-submit-btn input{
+    display: block;
+    width: 60vw;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: #ffff;
+    background: #39A096;
+}
+
+.form-submit-btn input:hover{
+    background: #8edaf1;
+    color: rgb(255, 255, 255);
+}
+.sex-selection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    
+}
+
+.sex-selection label{
+    width: 95%;
+    color: #38a095;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}

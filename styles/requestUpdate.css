@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+@keyframes blinkTextSuc{
+    0% {transform: scale(1);}
+    50%{transform: scale(1.1); color:rgb(108, 180, 108);}
+    100%{transform: scale(1);}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+:root {
+    --green: #39a096;
+    --lightblue: #a0cad8;
+    --white: #f4f4f4;
+    --darkwhite: #f4fafa;
+} 
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url("../images/dental.png");
+    background-size: cover;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: brightness(70%) saturate(70%) blur(1rem);
+}
+h1{
+    font-size: 2.5rem;
+    color: #f4fafa;
+}
+
+.am-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+.am-body{
+    width: 650px;
+    background-color: #9bcfca;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input, textarea, select{
+    width: 100%;
+    background-color: #d6ebe9;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 1px;
+    resize: none;
+    border-radius: 3px;
+}
+.am-head{
+    background-color: #38a095;
+    padding: 20px 10px;
+    text-align: center;
+    color: #f4fafa;
+
+
+}
+.am-footer{
+    background-color: #38a095;
+    padding: 20px 10px;
+    text-align: center;
+    color: #f4fafa;
+
+
+}
+
+.am-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.am-col-12{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.am-col-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.am-col-6{
+    width: 48%;
+}
+.am-col-7{
+    width: 30%;
+}
+.am-body-box{
+    padding: 20px;
+}
+.disabled{
+    cursor: none;
+    pointer-events: none;
+    color: red;
+}
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    font-size: 0.94rem;
+    color: #e9f4fb;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+ p, label{
+    font-weight: 500;
+    color: #040404
+}
+.am-footer>p{
+    color: #f4fafa;
+}
+button, #finalSubmit, #submitSelectDate{
+    width: 30%;
+    height: 80%;
+    background-color: #38a095;
+    color: #d6ebe9;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 20px;
+    resize: none;
+    border-radius: 10px;
+    font-size: 0.94rem;
+    font-weight: bold;
+}
+
+#submitSelectDate{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 5px;
+}
+button:hover, #finalSubmit:hover, #submitSelectDate:hover{
+    background-color: #d6ebe9;
+    color: black;
+    transition: 0.5s;
+}
+
+i{
+    font-size: 1.3rem;
+    color: #38a095;
+    margin-bottom: 10px;
+}
+i:hover{
+    background-color: #9bcfca;
+    transition: 0.5s;
+    color: #f4f4f4;
+}
+.message {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.error-message {
+    text-align: center;
+    color: #FF0000;
+}
+
+/*
+Update Msg of ApppointmentRequestUpdate
+*/
+
+.update-message {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #9bcfca;
+    text-align: center;
+    align-items: center;
+}
+
+/*style for popup*/
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    }
+
+.popup-container iframe{
+    width: 700px;
+    height: 80vh;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+.popup-container>img{
+    position: absolute;
+    top: 125px;
+    left: 300px;
+    cursor: pointer;
+    height: 24px;
+    max-width: 24px;
+}
+
+.success{
+    font-weight: bold;
+    margin-top: 1em;
+    margin-inline:1.5em;
+    color: green;
+    text-align: center;
+    animation: blinkTextSuc;
+    animation-duration: 1.2s;
+    font-size: 1.2em;
+}
+

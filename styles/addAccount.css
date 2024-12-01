@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+body{
+  background: #f4fafa;
+}
+
+.container{
+    display: flex;
+}
+
+/*
+style for table
+*/
+.table-container{
+    position: relative;
+    padding: 20px;
+    width: calc(100% - 100px);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex: 1; */
+}
+h1{
+  color: #38a095;
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+  font-size: 2.3em;
+  padding: 1px 10px ;
+  padding-bottom: 10px;
+}
+#reqTbl{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4fafa;
+  padding-top: -50px;
+}
+
+#search-container{
+  display: flex;
+
+  width: calc(100% - 100px);
+  justify-content: end;
+  align-items: end;
+  margin-top: -10px;
+  justify-content: flex-end;
+  width: calc(100% - 20px);
+
+}
+
+#search-container input{
+  border: 1px solid #58AD9D;
+  border-radius: 20px;
+  width: 13rem;
+  height: 45px;
+}
+
+#search-container i{
+  color: #38a095;
+  margin-right: 7px;
+
+}
+table {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  word-wrap: break-word;
+
+}
+
+th {
+  background-color: #5EB1A9;
+  color: white;
+
+}
+
+/*alternating colors*/
+tr:nth-child(even) {
+  background-color: #E1EFED;
+}
+
+tr:nth-child(odd) {
+  background-color: #CFE7E4;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+  justify-content: center;
+}
+
+.action-buttons button {
+  font-size: 23px;
+  background-color:transparent;
+  color: #38a095;
+}
+.action-buttons button:hover{
+  color: #acafaf;
+  transform-origin: 0.5s;
+}
+
+
+
+
+
+
+

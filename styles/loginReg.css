@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+@keyframes moveIn{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes moveFromRight{
+    from {transform: translateX(60em);}
+    to {transform: translateX(0);}
+}
+
+@keyframes moveFromLeft{
+    from {transform: translateX(-60em);}
+    to {transform: translateX(0);}
+}
+
+*{
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.logRegCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.leftSide{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    padding:5em;
+    text-align: center;
+    background-color: #ffffff;
+    animation-name:moveIn;
+    animation-duration: 1.3s ;
+}
+
+.leftSideNew{
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    background-color: #90cac4;
+    display: block;
+    visibility:visible;
+    animation-name:moveFromLeft;
+    animation-duration: 1.5s ;
+}
+
+.rightSide{
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    background-color: #90cac4;
+    display: block;
+    visibility:visible;
+    animation-name:moveFromRight;
+    animation-duration: 1.5s;
+}
+
+.rightSideNew{
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    padding: 4em;
+    text-align: center;
+    background-color: #ffffff;
+    animation-name:moveIn;
+    animation-duration: 1.3s ;
+}
+
+.leftSide p, .rightSide p, .leftSideNew p, .rightSideNew p{
+    font-size: 1em;
+    display: inline;
+}
+
+#logoClinic{
+    width: 11em;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+.leftSide h1, .rightSide h1, .leftSideNew h1, .rightSideNew h1{
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0.1em 0 0.4em 0;
+    color: #339e94;
+}
+
+.inputFormLog{
+    text-align: center;
+    display: block;
+    width: 80%;
+    height: 20em;
+    border: none;
+    border-radius: 0.5em; 
+    box-shadow: 0.2em 0.2em 0.8em rgb(119, 119, 119) ;
+    padding: 3.5em 2.5em;
+    margin: 0 auto 2em auto;
+    z-index: 1;
+}
+
+.inputFormReg{
+    text-align: center;
+    display: block;
+    width: 80%;
+    height: 22em;
+    border: none;
+    border-radius: 0.5em; 
+    box-shadow: 0.2em 0.2em 0.8em rgb(119, 119, 119) ;
+    padding: 2em 1em;
+    margin: 0 auto 0em auto;
+    z-index: 1;
+}
+
+.icon{
+    transform: translateY(0.4em);
+    margin-right: 0.2em;
+    font-size: 2em;
+}
+
+.inputLogin{
+    background-color: #cce1df;
+    border: none;
+    font-size: 1em;
+    border-radius: 0.4em;
+    width: 80%;
+    height: 3em;
+    padding-left: 0.5em;
+    margin: 0.5em auto 0.6em auto;
+    z-index: 2;
+}
+
+.inputReg{
+    background-color: #cce1df;
+    border: none;
+    font-size: 1em;
+    border-radius: 0.4em;
+    width: 40%;
+    height: 3em;
+    padding-left: 0.5em;
+    margin: 0.5em 0.2em 0.6em 0.2em;
+    z-index: 2;
+}
+
+#emailReg{
+    background-color: #cce1df;
+    border: none;
+    font-size: 1em;
+    border-radius: 0.4em;
+    width: 83%;
+    height: 3em;
+    padding-left: 0.5em;
+    margin: 0.5em auto 0.6em auto;
+    z-index: 2;
+}
+
+.inputLogin:not(hover)::placeholder, .inputReg:not(hover)::placeholder{
+    transition: 0.3s;
+}
+
+.inputLogin:hover::placeholder, .inputReg:hover::placeholder{
+    transform: translateX(-10em);
+    transition: 0.35s;
+    transition-timing-function: linear;
+}
+
+.inputLogin::placeholder, .inputReg::placeholder{
+    color:black;
+}
+
+.mainBtn{
+    border:none;
+    font-size: 1.1em;
+    color:white;
+    border-radius: 0.4em;
+    height: 3em;
+    width: 50%;
+    margin-top: 2em;
+    background-color: #339e94;
+    cursor: pointer;
+}
+
+#submitBtn:hover{
+    background-color: #36aa9e;
+}
+
+.heroClinicImg{
+    height: 100%;
+    max-width: 100%;
+}
+
+.heroClinicImg:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.heroClinicImg:not(hover){
+    transform: scale(1.0);
+    transition: 1s ease-in-out;
+}
+
+.btnInquiry{
+    cursor: pointer;
+    color: #339e94;
+    font-size: 1em;
+    background-color: #ffffff;
+    border: none;
+    text-decoration: underline;
+}
+
+#passImageLog{
+    transform: translate(-2em, 1.3em);
+}
+
+#passImageReg{
+    transform: translateY(1.3em);
+}
+
+.passImg{
+    cursor: pointer;
+    position: absolute;
+    width: 1.5em;
+    z-index: 99;
+}
+
+.errorOutput{
+    color:red;
+}
+
+.successRegOutput{
+    color:green;
+}

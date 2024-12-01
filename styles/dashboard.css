@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+:root {
+    --bg: #f4fafa;
+    --bg-darker: #eaf4f3;
+    --teal: #38a095;
+    --lightgreen: #cce1df;
+    --lightblue: #90cac4;
+    --blue: #8edaf1;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: var(--bg);
+}
+
+.container{
+    display: flex;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: calc(100% - 100px);
+}
+
+.main-top{
+    color: var(--teal);
+}
+
+.per{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 19px;
+    background: white;
+}
+
+.card i{
+    color: var(--teal);	
+}
+
+
+p, h2{
+    color: var(--teal);
+}
+
+p{
+    font-size: 1.4em;
+}
+
+h2{
+    font-size: 2.8em;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto) 300px;
+    gap: 15px;
+}
+
+.grid-container>div , table{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+
+h1{
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 2.3em;
+    padding: 0 10px 10px 10px;
+}
+
+#chartContainer{
+    grid-column: 1/ span 3;
+}
+
+.bar, table{
+    height: 300px ;
+}
+
+table{
+    grid-column: 1/3;
+    background-color: white;
+}
+
+#barContainer{
+    grid-column: 3/5;
+    overflow: hidden;
+}
+
+
+#pieContainer, #chartContainer{
+    height: 380px;
+    overflow: hidden;
+}
+
+/* For table */
+table {
+    overflow: hidden;
+    border-radius: 10px;
+    border-collapse: collapse;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+th {
+    height: 25px;
+    background-color: #5EB1A9;
+    color: white;
+}
+
+tr:nth-child(odd) {
+background-color: #E1EFED;
+}

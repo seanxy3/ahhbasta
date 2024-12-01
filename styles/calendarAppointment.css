@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.titleCont{
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  color: #38a095;
+  padding-left: 1.5em;
+}
+
+.titleCont h1{
+  font-size: 2.3em;
+}
+
+.main{
+  position: relative;
+  padding: 20px;
+  width: calc(100% - 100px);
+  background-color:#f4fafa;
+}
+
+.mainCont{
+  width: 100%;
+  display: flex;
+  margin-top: 0;
+}
+.calendarCont{
+  height: 10em;
+  padding: 20px;
+  width: 50%;
+  align-self: center;
+  justify-self  : center;
+}
+
+.appointmentCont{
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.labelDatePick{
+  font-size: 1.3em;
+}
+
+#inputDate{
+  background-color: #cce1df;
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 0.5em;
+  width: 10em;
+  font-weight: 500;
+
+}
+
+.dateSubmit{
+  cursor: pointer;
+  margin-left: 1em;
+  border: none;
+  background-color:#38a095 ;
+  color: white;
+  font-size: 1em;
+  width: 7em;
+  height: 2em;
+  border-radius: 0.5em;
+}
+
+.searchResult{
+  text-align: center;
+  place-content: center;
+  border-collapse: collapse;
+}
+.mainTbl{
+  overflow: hidden;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border: none;
+
+  border-collapse: collapse;
+  width: 100%;
+  width: 100%;
+  /*ARE ANG SHADOW SA TABLE*/
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.searchCont{
+    display: flex;
+    place-content: center;
+}
+.head{
+  background-color: #38a095;
+  color:white;
+  margin:0;
+}
+
+tr:nth-child(even) {
+  background-color: #E1EFED;
+}
+
+tr:nth-child(odd) {
+  background-color: #CFE7E4;
+}
+
+#addApp{
+  float: right;
+  width:4em;
+  text-align: center;
+  justify-content: center;
+  margin: 0.2em;
+}
+
+#noRes{
+  background-color: #CFE7E4;
+  color: black;
+}
+  

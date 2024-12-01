@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+@keyframes blinkTextSuc{
+    0% {transform: scale(1);}
+    50%{transform: scale(1.1); color:rgb(108, 180, 108);}
+    100%{transform: scale(1);}
+}
+
+@keyframes blinkTextErr{
+    0% {transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+}
+h1{
+    font-size: 40px;
+    color: #f4fafa;
+}
+
+div p{ 
+    font-weight: bold;
+}
+.am-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    /* padding: 20px 16px; */
+
+}
+.am-body{
+    width: 700px;
+    background-color: #9bcfca;
+
+}
+input, textarea, select, button{
+    width: 100%;
+    background-color: #d6ebe9;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 5px;
+    resize: none;
+    border-radius: 3px;
+}
+.am-head{
+    background-color: #38a095;
+    padding: 20px 10px;
+    text-align: center;
+    color: #f4fafa;
+
+
+}
+.am-footer{
+    background-color: #38a095;
+    padding: 20px 10px;
+    text-align: center;
+    color: #f4fafa;
+
+
+}
+
+.am-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.am-col-12{
+    width: 100%;
+}
+.am-col-3{
+    width: 30%;
+    
+}
+.am-col-6{
+    width: 48%;
+}
+.am-col-7{
+    width: 30%;
+}
+.am-body-box{
+    padding: 20px;
+    padding-top: 5px;
+}
+.disabled{
+    cursor: none;
+    pointer-events: none;
+    color: red;
+}
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    color: #e9f4fb;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+ p{
+    font-weight: 500;
+    color: #040404
+}
+.am-footer>p{
+    color: #f4fafa;
+}
+
+/* .dateLay{
+    width: 50%;
+} */
+
+.datePicker{
+    place-content: center;
+    text-align: center;
+}
+
+.datePicker p{
+    text-align: left;
+}
+.timeCont{
+    place-content: center;
+    text-align: center;
+}
+
+#submitSelectDate, #submitInfo{
+    background-color: #38a095;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+}
+.buttonCont{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#finalSubmit{
+    background-color: #38a095;
+    color: white;
+    font-weight: bold;
+}
+
+#finalSubmit:hover, #submitSelectDate:hover, #submitInfo:hover{
+    cursor: pointer;
+    background-color: #44baae;
+}
+
+.error{
+    margin-inline:1.5em;
+    color: red;
+    text-align: center;
+    animation: blinkTextErr;
+    animation-duration: 1.2s;
+    font-size: 1.2em;
+}
+
+.success{
+    margin-inline:1.5em;
+    color: green;
+    text-align: center;
+    animation: blinkTextSuc;
+    animation-duration: 1.2s;
+    font-size: 1.2em;
+}
+
+.hideConfirmButton{
+    display: none;
+}
+
+#submitInfo:disabled, #submitInfoOld:disabled{
+    background-color: #acafaf;
+}
+
+i{
+    font-size: 1.3rem;
+    color: #38a095;
+    margin-bottom: 10px;
+    position: relative;
+    top: 0.5em;
+    left: 1em;
+}
+i:hover{
+    background-color: #9bcfca;
+    transition: 0.5s;
+    color: #f4f4f4;
+}

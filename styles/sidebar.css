@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    font-family: 'Jost', sans-serif;
+}
+:root {
+    --green: #39a096;
+    --lightblue: #a0cad8;
+    --white: #f4f4f4;
+    --darkwhite: #f4fafa;
+} 
+
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 1rem;
+    color: var(--green);
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background:  linear-gradient(45deg, var(--lightblue), var(--green));
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
+
+nav span{
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 300;
+}
+
+nav:hover{
+    width: 350px;
+    transition: 0.5s;
+}
+
+.logo{
+    position: relative;
+    height: 85px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1.7rem;
+    margin-left: 0.6rem;
+}
+
+.logo img{
+    height: 85%;
+}
+
+.logo span{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: var(--white);
+}
+
+.menu{
+    height: 85%;
+    position: relative;
+    list-style: none;
+}
+
+.menu li{
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    line-height: 0.8rem;
+    width: 500px;
+}
+
+.menu li:hover, .menu li:hover a{
+    background: var(--darkwhite);
+    color: var(--green);
+}
+
+.menu li a{
+    color: var(--white);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.menu li a i{
+    font-size: 1.3rem;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 1rem);
+}
+
+.menu li.active {
+    background: var(--darkwhite);
+    color: var(--green);
+}
+
+.menu li.active a {
+    color: var(--green);
+}
